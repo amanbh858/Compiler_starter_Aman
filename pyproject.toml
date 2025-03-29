@@ -1,0 +1,25 @@
+[project]
+name = "compiler_starter_aman"
+version = "0.1.0"
+description = "Prefix notation calculator with + and * operators"
+authors = [
+    {name = "Aman Bhardwaj", email = "amanbh858@gmail.com"}
+]
+dependencies = [
+    "sly==0.5",
+    "PyQt6==6.8.1",
+    "Flask==3.0.2"
+]
+requires-python = ">=3.9"
+readme = "README.md"  # File must exist
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend>=2.0.0"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest==7.0",
+    "black==22.0"
+]
