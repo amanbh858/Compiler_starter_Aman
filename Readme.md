@@ -70,7 +70,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Launch GUI (X11 forwarding required)
-CMD ["python", "main.py"]
+CMD ["python", "web_main.py"]
 To build and run:
 
 bash
