@@ -47,8 +47,31 @@ Python (version 3.8 or higher)
 
 PDM (Python Development Master, a package manager)
 
+<<<<<<< HEAD
 Installing PDM
 If you haven't already installed PDM, you can do so by running:
+=======
+B. Docker Implementation
+dockerfile
+Copy
+# Dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+
+# Install system dependencies for PyQt6
+RUN apt-get update && apt-get install -y libxcb-xinerama0
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# Copy application
+COPY . .
+
+# Launch GUI (X11 forwarding required)
+CMD ["python", "web_main.py"]
+To build and run:
+>>>>>>> 7b747dfbf14d7fa5afeb7a2c13ab58479bce2b5c
 
 bash
 Copy
